@@ -14,7 +14,7 @@ public class Agent extends Thread {
         position = null;
         id = -1;
         priority = -1;
-        setPosition(init);
+        //setPosition(init);
         setFinalPosition(fin);
 
     }
@@ -43,14 +43,14 @@ public class Agent extends Thread {
         return position_final;
     }
 
-    public synchronized void setPosition(Position pos) {
+    /*public synchronized void setPosition(Position pos) {
         position = new Position(pos);
         //TODO : Create the graph class with the A* algorithm
         Graph.setFree(position, false);
         if (ReachedPosition()) {
             Graph.block(position);
         }
-    }
+    }*/
 
     public synchronized void setFinalPosition(Position pos) {
         position_final = new Position(pos);

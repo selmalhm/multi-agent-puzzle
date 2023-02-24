@@ -8,7 +8,7 @@ public class Graph {
     
     public static class PathAndDistance{};
 
-    public static synchronized PathAndDistance aStar(Position source, Position target) {
+    /*public static synchronized PathAndDistance aStar(Position source, Position target) {
         
-    }
+    }*/
 }
